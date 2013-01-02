@@ -1,0 +1,15 @@
+name: olyBan
+main: com.olympuspvp.ban.olyBan
+version: 1.0
+author: CalDaBeast
+description: Banning and kicking
+
+commands:
+    ban:
+        description: bans a player
+    unban:
+        description: removes the ban on a player
+    getban:
+        description: returns ban details
+    kick:
+        description: kicks a player from the server
