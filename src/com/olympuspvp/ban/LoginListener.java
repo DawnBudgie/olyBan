@@ -42,6 +42,7 @@ public class LoginListener implements Listener{
 		if(twoBans.contains(ip)){
 			e.setJoinMessage(null);
 			p.kickPlayer(ban.tag + "You have been banned on two accounts from this IP address.\nCurrent ip: " + ChatColor.DARK_RED + ip + "\n" + ChatColor.RED + "If you would like to dispute this ban, visit www.olympuspvp.com");
+			ban.setBan(p.getName(), "AUTO-IPBAN", "Connected using a banned ip-address: " + ip, "CONSOLE", null, false);
 			failedLogin = p.getName();
 		}
 	}
